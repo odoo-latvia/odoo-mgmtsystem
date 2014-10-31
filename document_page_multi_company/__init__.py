@@ -2,7 +2,7 @@
 ##############################################################################
 #
 #    OpenERP, Open Source Management Solution
-#    Copyright (C) 2010 Savoir-faire Linux (<http://www.savoirfairelinux.com>).
+#    Copyright (C) 2013 Savoir-faire Linux (<http://www.savoirfairelinux.com>).
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -18,34 +18,7 @@
 #    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 ##############################################################################
-{
-    "name": "Environment Management System",
-    "version": "1.0",
-    "author": "Savoir-faire Linux",
-    "website": "http://www.savoirfairelinux.com",
-    "license": "AGPL-3",
-    "category": "Management System",
-    "description": """\
-This module enables you to manage your environment management system, including :
-            * Environment Manual
-            * Reviews
-            * Audits
-            * Environmental Aspects
-            * Nonconformities
-            * Actions
-            * Employee Training
-    """,
-    "depends": [
-        'mgmtsystem_audit',
-        'mgmtsystem_review',
-        'document_page_environment_manual',
-        'document_page_environmental_aspect',
-        # 'training_hr',
-    ],
-    "data": ['environment.xml'],
-    "demo": [],
-    "installable": True,
-    "application": True,
-    "certificate": ''
-}
+
+from . import document_page_multi_company
+
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:

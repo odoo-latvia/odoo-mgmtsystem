@@ -1,8 +1,8 @@
 # -*- encoding: utf-8 -*-
 ##############################################################################
-#
+#    
 #    OpenERP, Open Source Management Solution
-#    Copyright (C) 2010 Savoir-faire Linux (<http://www.savoirfairelinux.com>).
+#    Copyright (C) 2013 Savoir-faire Linux (<http://www.savoirfairelinux.com>).
 #
 #    This program is free software: you can redistribute it and/or modify
 #    it under the terms of the GNU Affero General Public License as
@@ -15,25 +15,10 @@
 #    GNU Affero General Public License for more details.
 #
 #    You should have received a copy of the GNU Affero General Public License
-#    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#    along with this program.  If not, see <http://www.gnu.org/licenses/>.  
 #
 ##############################################################################
-{
-    "name": "Management System - Claim",
-    "version": "1.1",
-    "author": "Savoir-faire Linux",
-    "website": "http://www.savoirfairelinux.com",
-    "license": "AGPL-3",
-    "category": "Management System",
-    "description": """This module enables you to manage the claims of your management system.""",
-    "depends": ['mgmtsystem', 'crm_claim', 'mail'],
-    "data": [
-        'security/ir.model.access.csv',
-        'security/mgmtsystem_claim_security.xml',
-        'mgmtsystem_claim.xml',
-        'claim_sequence.xml',
-        'workflow_mgmtsystem_claim.xml',
-        'board_mgmtsystem_claim.xml',
-    ],
-}
+
+import document_page_approval
+
 # vim:expandtab:smartindent:tabstop=4:softtabstop=4:shiftwidth=4:
